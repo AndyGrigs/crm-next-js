@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from '../components/header'
-import Toolbar from '../components/toolbar'
-import SearchInput from '../components/search-input'
-import AddCompanyButton from '../components/add-button-company'
-import CompanyTable from '../components/company-table'
-import CompanyRow from '../components/company-row'
-import { Status } from '../components/status-abel'
+import Header from '../../components/header'
+import Toolbar from '../../components/toolbar'
+import SearchInput from '../../components/search-input'
+import AddCompanyButton from '../../components/add-button-company'
+import CompanyTable from '../../components/company-table'
+import CompanyRow from '../../components/company-row'
+import { Status } from '../../components/status-abel'
 
 function Page() {
   return (
