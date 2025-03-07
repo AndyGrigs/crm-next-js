@@ -1,10 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import SidebarItem from '@/app/components/sidebar-item';
+import { useRouter } from 'next/router';
 
 export type SidebarProps = object
 
 export default function Sidebar({}: SidebarProps) {
+  const router = useRouter();
+  const handleExit = () => router.push('/');
   return (
     <aside className="fixed top-0 left-0 z-40 w-60 h-screen">
       <div className="flex flex-col h-full overflow-y-auto bg-gray-900">
@@ -39,6 +42,7 @@ export default function Sidebar({}: SidebarProps) {
             alt="exit icon"
           />
           <span className="font-medium text-white">Exit</span>
+          onClick={handleExit()}
         </button>
       </div>
     </aside>
