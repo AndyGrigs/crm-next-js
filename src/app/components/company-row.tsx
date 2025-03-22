@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
-import StatusLabel, { Status } from './status-abel';
+import StatusLabel, { Status } from '@/app/components/status-label';
 
 export interface CompanyRowProps {
   id: number;
@@ -14,10 +14,10 @@ export interface CompanyRowProps {
 }
 
 const labelByStatus = {
-  [Status.ACTIVE]: 'Active',
-  [Status.INACTIVE]: 'Not Active',
-  [Status.PENDING]: 'Pending',
-  [Status.SUSPENDED]: 'Suspended',
+  [Status.Active]: 'Active',
+  [Status.NotActive]: 'Not Active',
+  [Status.Pending]: 'Pending',
+  [Status.Suspended]: 'Suspended',
 };
 
 export default function CompanyRow({

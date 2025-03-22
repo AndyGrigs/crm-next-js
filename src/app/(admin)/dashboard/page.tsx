@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-const Page = () => {
- 
-    return (
-      <div>Page dashboard</div>
-    )
-  }
+export interface PageProps {}
 
-
-export default Page
+export default function Page({}: PageProps) {
+  return (
+    <main>
+      <h1 className="text-xl">Dashboard Page</h1>
+    </main>
+  );
+}
