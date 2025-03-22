@@ -5,10 +5,12 @@ export interface PageProps {
   params: { id: string };
 }
 
-export default function Page({ params }: PageProps) {
+export default async function Page({ params }: PageProps) {
+  const companyId = await params.id;
+  
   return (
     <>
-      <Header>Company ({params.id})</Header>
+      <Header>Company ({companyId})</Header>
     </>
   );
 }
