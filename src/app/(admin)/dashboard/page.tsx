@@ -1,6 +1,6 @@
 import React from 'react';
 
-export interface PageProps {}
+export type PageProps = object
 
 export default function Page({}: PageProps) {
   return (
