@@ -1,9 +1,12 @@
 import AddCompanyButton from '@/app/components/add-company-button';
+import Sidebar from './components/sidebar';
+import Header from './components/header';
 
 export default function Home() {
   return (
     <main>
-      <h1 className="text-xl">Home page</h1>
+      <Header />
+      <Sidebar />
       <AddCompanyButton />
     </main>
   );
