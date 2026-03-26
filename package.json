@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^3.0.3",
     "formik": "^2.4.6",
     "next": "15.1.7",
     "react": "^19.0.0",
