@@ -5,11 +5,12 @@ import SearchInput from '@/app/components/search-input';
 import AddCompanyButton from '@/app/components/add-company-button';
 import CompanyTable from '@/app/components/company-table';
 import CompanyRow from '@/app/components/company-row';
+import { getCompanies } from '@/lib/companies';
 import { Status } from '@/app/components/status-label';
 
-export interface PageProps {}
+export default function Page() {
+  const companies = getCompanies();
 
-export default function Page({}: PageProps) {
   return (
     <>
       <Header>Companies</Header>
@@ -18,15 +19,18 @@ export default function Page({}: PageProps) {
           <SearchInput />
         </Toolbar>
         <CompanyTable>
-          <CompanyRow
-            id={1}
-            category="Products"
-            company="Costco"
-            status={Status.Pending}
-            promotion={true}
-            country="USA"
-            joinedDate="02.19.2023"
-          />
+          {companies.map((company) => (
+            <CompanyRow
+              key={company.id}
+              id={company.id}
+              category={company.category}
+              company={company.name}
+              status={company.status as Status}
+              promotion={company.promotion}
+              country={company.country}
+              joinedDate={company.joinedDate}
+            />
+          ))}
         </CompanyTable>
       </main>
     </>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Costco",
+    "category": "Products",
+    "status": "active",
+    "promotion": true,
+    "country": "USA",
+    "joinedDate": "2023-02-19",
+    "description": "American multinational retail corporation."
+  },
+  {
+    "id": 2,
+    "name": "Acme Corp",
+    "category": "Technology",
+    "status": "active",
+    "promotion": false,
+    "country": "USA",
+    "joinedDate": "2024-05-10",
+    "description": "Technology solutions provider."
+  },
+  {
+    "id": 3,
+    "name": "Global Media",
+    "category": "Media",
+    "status": "pending",
+    "promotion": true,
+    "country": "UK",
+    "joinedDate": "2024-11-03",
+    "description": "International media company."
+  }
+]
